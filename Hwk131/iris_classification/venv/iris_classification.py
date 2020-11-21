@@ -102,7 +102,7 @@ def scatter_plot(x, y, col, fnames):
     plt.title("Iris Dataset Scatterplot")
     plt.xlabel(fnames[0])
     plt.ylabel(fnames[1])
-    plt.show()
+    #plt.show()
 #end def scatter_plot(x, y, col, fnames):
 
 def graph_decision(ymin, ymax, weights, bias):
