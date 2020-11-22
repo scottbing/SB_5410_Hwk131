@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1ka3yuccr65EqEvBZ6FueDHJ9Wu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -15,9 +22,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/venv" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.iris_classification">
     <configuration name="iris_classification" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iris_classification" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -39,9 +52,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="iris_classification_bk01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="iris_classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/iris_classification_bk01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tryit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="iris_classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/tryit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.iris_classification" />
+        <item itemvalue="Python.tryit" />
+        <item itemvalue="Python.iris_classification_bk01" />
       </list>
     </recent_temporary>
   </component>
@@ -59,26 +116,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1196" height="245" key="GridCell.Tab.0.bottom" timestamp="1605926214139">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom" timestamp="1606018761924">
+      <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1196" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1605925315757" />
-    <state width="1196" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1007@0.23.1920.1007" timestamp="1605926214139" />
-    <state width="1196" height="245" key="GridCell.Tab.0.center" timestamp="1605926214139">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1005@0.23.1920.1005" timestamp="1606010092358" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1006@0.23.1920.1006" timestamp="1606018761924" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1007@0.23.1920.1007" timestamp="1606018647277" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center" timestamp="1606018761923">
+      <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1196" height="245" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1605925315751" />
-    <state width="1196" height="245" key="GridCell.Tab.0.center/0.23.1920.1007@0.23.1920.1007" timestamp="1605926214139" />
-    <state width="1196" height="245" key="GridCell.Tab.0.left" timestamp="1605926214138">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1005@0.23.1920.1005" timestamp="1606010092357" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1006@0.23.1920.1006" timestamp="1606018761923" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1007@0.23.1920.1007" timestamp="1606018647276" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left" timestamp="1606018761923">
+      <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1196" height="245" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1605925315751" />
-    <state width="1196" height="245" key="GridCell.Tab.0.left/0.23.1920.1007@0.23.1920.1007" timestamp="1605926214138" />
-    <state width="1196" height="245" key="GridCell.Tab.0.right" timestamp="1605926214139">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1005@0.23.1920.1005" timestamp="1606010092357" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1006@0.23.1920.1006" timestamp="1606018761923" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1007@0.23.1920.1007" timestamp="1606018647276" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right" timestamp="1606018761924">
+      <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1196" height="245" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1605925315752" />
-    <state width="1196" height="245" key="GridCell.Tab.0.right/0.23.1920.1007@0.23.1920.1007" timestamp="1605926214139" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1005@0.23.1920.1005" timestamp="1606010092358" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1006@0.23.1920.1006" timestamp="1606018761924" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1007@0.23.1920.1007" timestamp="1606018647277" />
     <state x="474" y="205" key="SettingsEditor" timestamp="1605925312196">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>

@@ -1,6 +1,9 @@
 from sklearn.datasets import load_iris
 from matplotlib import pyplot as plt
+from sklearn.linear_model import LinearRegression
+from statistics import mean
 import matplotlib.pyplot as plt
+import numpy as np
 from Perceptron import *
 import random
 
@@ -105,7 +108,7 @@ def scatter_plot(x, y, col, fnames):
     #plt.show()
 #end def scatter_plot(x, y, col, fnames):
 
-def graph_decision(ymin, ymax, weights, bias):
+def graph_decision(ymin, ymax, x, y, weights, bias):
     w = (bias, weights[0], weights[1])
     xx = np.linspace(ymin, ymax)
 
@@ -113,8 +116,38 @@ def graph_decision(ymin, ymax, weights, bias):
     intercept = -w[0]/w[2]
 
     yy = (slope*xx) + intercept
+    plt.scatter(x, y)
     plt.plot(xx, yy, 'k-')
     plt.show()
+
+def best_fit_slope_and_intercept(xs, ys, col, fnames):
+    # m = (((mean(xs) * mean(ys)) - mean(np.multiply(xs, ys))) /
+    #      ((mean(xs) * mean(xs)) - mean(np.multiply(xs, xs))))
+
+    m = (((mean(xs) * mean(ys)) + mean(np.multiply(xs, ys))) /
+         ((mean(xs) * mean(xs)) + mean(np.multiply(xs, xs))))
+
+    # m = (((mean(xs) * mean(ys)) - mean(np.multiply(xs, ys))) /
+    #      ((mean(xs) * mean(xs)) - mean(np.multiply(xs, xs))))
+
+    b = mean(ys) - m * mean(xs)
+
+    print(m, b)
+
+    regression_line = [(m*x)+b for x in xs]
+
+    import matplotlib.pyplot as plt
+    from matplotlib import style
+    style.use('ggplot')
+
+    #plt.scatter(xs,ys)
+    plt.scatter(xs, ys, c=col)
+    plt.title("Iris Dataset Scatterplot")
+    plt.xlabel(fnames[0])
+    plt.ylabel(fnames[1])
+    plt.plot(xs, regression_line)
+    plt.show()
+
 
 def main():
     iris = load_data()
@@ -141,16 +174,19 @@ def main():
     test_label = np.concatenate((sertosa_label_test, versic_label_test))
 
     #plotting only 2 dimesnsions of the data, the first two vals
-    scatter_plot([val[0] for val in train_data], [val[1] for val in train_data],
-                 train_label, iris.feature_names)
+    # scatter_plot([val[0] for val in train_data], [val[1] for val in train_data],
+    #              train_label, iris.feature_names)
 
     classifier = Perceptron(learning_rate=0.1)
     classifier.fit(train_data, train_label, 30)
     print("Computed weights are: ", classifier._w)
 
-    graph_decision(min([val[0] for val in train_data]), \
-                   max([val[0] for val in train_data]), \
-                   classifier._w, classifier._b)
+    # graph_decision(min([val[0] for val in train_data]), max([val[0] for val in train_data]),
+    #                [val[0] for val in train_data], [val[0] for val in train_data],
+    #                classifier._w, classifier._b)
+
+    best_fit_slope_and_intercept([val[0] for val in train_data], [val[1] for val in train_data],
+                                 train_label, iris.feature_names)
 
     for i in range(len(test_label)):
         print(max(0, classifier.predict(test_data[i])), test_label[i])
